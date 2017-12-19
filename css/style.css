@@ -1,0 +1,302 @@
+/* Общие правила для обёрток и основных блоков НАЧАЛО */
+.wraper-header,
+.wraper-main,
+.wraper-footer {
+	width: 100%;
+	background-color: #ffffff;
+}
+
+.wraper-header {
+	height: 1057px;
+	background: url("../img/background-header-XL.png") no-repeat top center;
+}
+
+.header,
+.main,
+.footer {
+	width: 960px;
+	margin: 0 auto;
+}
+/* Общие правила для обёрток и основных блоков КОНЕЦ */
+
+/* Блок HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+	/* Блок ссылка логотипа */
+.header-link-img {
+	float: left;
+}
+	/* Блок главного меню */
+.header-menu {
+	display: inline-block;
+	padding: 29px 26px 32px 347px;
+}
+		/* Блок с элементами списка главного меню */
+.header-menu__list {
+	padding-right: 34px;
+	display: inline-block;
+}
+.list_padding-none {
+	padding-right: 0;
+}
+		/* Блок ссылка внутри элемента списка главного меню */
+.header-menu__link {
+	text-decoration: none;
+}
+
+.header-menu__item {
+	font-size: 14px;
+	font-family: "Montserrat";
+	color: rgb(38, 55, 66);
+	text-transform: uppercase;
+}
+.header-menu__item:hover {
+	text-decoration: overline;
+	text-decoration-color: red;
+}	
+
+	/* Блок с верхними социальными иконками */
+.header-sociate-icon {
+	float: right;
+	padding-top: 25px;
+}
+.header-sociate-icon__link {
+	text-decoration: none;
+	display: inline-block;
+}
+		/* Модификатор отсупа ссылки */
+.link_margin-right {
+	margin-right: 23px;
+}
+
+/* Блок с описанием контента по центру */
+.wrapper-header-description {
+	width: 960px;
+	margin: 305px auto 0; /*Нижний margin:363px*/
+}
+
+.header-description {
+	display: inline-block;
+	width: 510px;
+}
+
+.hgroup__h1 {
+	font-size: 2.5em;
+	font-family: "Montserrat";
+	color: rgb(49, 74, 91);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.104;
+	text-align: left;
+}
+.hgroup__h1:hover {
+	transform: translateX(25px);
+	transition-duration: 2s;
+}
+.hgroup-point-red {
+	color: #fa5c65;
+}
+
+.header-description__item {
+	font-size: 1.25em;
+	font-family: "OpenSans";
+	color: rgb(49, 74, 91);
+	line-height: 2.017;
+	margin-bottom: 40px;
+}
+.header-description__item:hover {
+	transform: translateY(17px);
+	transition-duration: 2s;
+}
+		/* Блок кнопки */
+.header-description__button {
+	width: 171px;
+	height: 64px;
+	background-color: #fa5c65;
+	border-radius: 10px;
+	border: none;
+}
+.header-description__button:hover, focus {
+	transform: rotate(5deg);
+	transition-duration: 1s;
+}
+
+.header-description__button-link {
+	text-decoration: none;
+	display: block;
+	padding: 21px;
+	color: #ffffff;
+}
+.header-description__button-link:focus {
+    outline: none;
+}    
+
+/* Блок MAIN !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.main-container {
+	width: 257px;
+	height: 169px;
+	padding-top: 86px;
+	padding-bottom: 107px;
+	display: inline-block;
+}
+.main-container_padding-center {
+	padding: 0 69px 0 63px;
+}
+
+.main-container__section {
+	display: block;
+	height: 127px;
+}
+	/* Блок заголовка 3-го уровня */
+.hgroup-h3 {
+	font-size: 25px;
+	font-family: "Montserrat";
+	color: rgb(70, 80, 101);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1;
+}
+
+.main-container__section-item {
+	font-size: 16px;
+	font-family: "OpenSans";
+	color: rgb(154, 160, 171);
+	line-height: 1.467;
+	padding-top: 12px;
+}
+	/* Блок с сылкой MORE -> */
+.main-container__section-link {
+	font-size: 14px;
+	text-decoration: none;
+	font-family: "Montserrat";
+	color: rgb(250, 92, 101);
+	text-transform: uppercase;
+	line-height: 5;
+}
+.main-container__section-img {
+	padding-left: 7px;
+}
+
+/* Блок PORTFOLIO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.portfolio {
+	width: 367px;
+	float: right;
+	margin-top: 17px;
+}
+
+.hgroup-h2 {
+	font-size: 32px;
+	font-family: "Montserrat";
+	color: rgb(49, 74, 91);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.15;
+	text-align: left;
+}
+
+.subtitle-hgroup-main {
+	font-size: 16px;
+	font-family: "OpenSans";
+	color: rgb(49, 74, 91);
+	line-height: 1.25;
+	text-align: left;
+	margin-bottom: 35px;
+}
+	/* Блок с параграф с описанием блока PORTFOLIO */
+.portfolio__item {
+	font-size: 15px;
+	font-family: "OpenSans";
+	color: rgb(154, 160, 171);
+	line-height: 1.467;
+	text-align: left;
+}
+.item_padding-bottom {
+	padding-bottom: 30px;
+}
+
+/* Блок OUR TEAM !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.team {
+	margin: 107px 0 44px 0;
+}
+
+.hgroup-main_color {
+  color: rgb(154, 160, 171);
+}
+	/* Второстепенный блок TEAM-BOX */
+.team-box {
+	height: 120px;
+	width: 275px;
+	display: inline-block;
+	margin-right: 50px;
+}
+.team-box_margin-none {
+	margin: 0;
+}
+
+.team-box__user {
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	float: left;
+	background-repeat: no-repeat;
+	padding-right: 20px;
+	border: none;
+}
+.user-1 {
+	background-image: url("../img/team-user1.png");
+}
+.user-2 {
+	background-image: url("../img/team-user2.png");
+}
+.user-3 {
+	background-image: url("../img/team-user3.png");
+}
+.team-box-description {
+	padding-top: 20px;
+}
+		/* При наведении на блок team-box у заголовока 4-го уровня появляется нижняя рамка */
+.team-box:hover .hgroup-h4 {
+	text-decoration: overline;
+	text-decoration-color: red;	
+}
+.hgroup-h4 {
+	font-family: "Montserrat";
+	color: rgb(49, 74, 91);
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	text-align: left;
+	display: inline-block;
+}
+.subtitle-hgroup-team {
+	font-size: 15px;
+	font-family: "OpenSans";
+	color: rgb(240, 69, 76);
+	font-weight: 700;
+	padding-bottom: 10px;
+	text-align: left;
+}
+.team-box-description__item {
+	font-size: 14px;
+	font-family: "OpenSans";
+	color: rgb(154, 160, 171);
+	line-height: 1.429;
+	text-align: left;
+}
+		/* Нижняя граница блока main */
+.main-bottom-line {
+	border-top: 1px solid #e6eaed;
+}
+
+/* Блок FOOTER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.footer-sociate__link {
+	text-decoration: none;
+	display: inline-block;
+	margin: 33px 22px 41px 0;
+}
+
+.footer__copy {
+	float: right;
+	font-size: 13px;
+	font-family: "OpenSans";
+	color: rgb(185, 192, 198);
+	padding-top: 40px
+}

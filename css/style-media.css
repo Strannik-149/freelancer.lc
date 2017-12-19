@@ -1,0 +1,241 @@
+body {
+	font: 100%/1.5em Arial, Helvetica, sans-serif;
+}
+	
+	/* Clear - Очистка потока */
+.container:before, /* Добавляем наш класс .container Чтобы после него так же было очищение */
+.container:after,
+.row:before, /* Добавляем наш класс .row Чтобы после него так же было очищение */
+.row:after,
+.clear:before,
+.clear:after {
+	content: " ";
+	display: table;
+}
+
+.container:after,
+.row:after,
+.clear:after {
+	clear: both;
+}
+
+	/* Fluid Grids */
+.container .cols {
+	float: left;
+	/* margin: 0 0 1em; */
+	padding: 0 1em;
+	/* text-align: center; */
+}
+
+.container .cols.col-1, 
+.container .cols.col-2, 
+.container .cols.col-3, 
+.container .cols.col-4, 
+.container .cols.col-5, 
+.container .cols.col-6, 
+.container .cols.col-7, 
+.container .cols.col-8, 
+.container .cols.col-9, 
+.container .cols.col-10, 
+.container .cols.col-11, 
+.container .cols.col-12 { width: 100%; }
+
+@media screen and (orientation: landscape), all and (min-width: 961px) { /* Альбомная ориентация */
+	.container .cols.col-1 {width: 8.333333333%}
+	.container .cols.col-2 {width: 16.666666666%}
+	.container .cols.col-3 {width: 25%}
+	.container .cols.col-4 {width: 33.333333333%}
+	.container .cols.col-5 {width: 41.666666666%}
+	.container .cols.col-6 {width: 50%}
+	.container .cols.col-7 {width: 58.333333333%}
+	.container .cols.col-8 {width: 66.666666666%}
+	.container .cols.col-9 {width: 75%}
+	.container .cols.col-10 {width: 83.333333333%}
+	.container .cols.col-11 {width: 91.666666666%}
+	.container .cols.col-12 {width: 100%} 
+
+	.wraper-header {
+		background: url("/img/@media/background-header-XL.png") no-repeat top center;
+		background-size: cover; 
+		-webkit-background-size: cover; 
+		-moz-background-size: cover;
+		overflow: hidden; 
+		min-height: 675px;
+	}
+
+}
+
+@media screen and (orientation: portrait), all and (max-width: 768px) { /* Портретная ориентация */
+	.container .cols.col-1 {width: 8.333333333%}
+	.container .cols.col-2 {width: 16.666666666%}
+	.container .cols.col-3 {width: 25%}
+	.container .cols.col-4 {width: 33.333333333%}
+	.container .cols.col-5 {width: 41.666666666%}
+	.container .cols.col-6 {width: 50%}
+	.container .cols.col-7 {width: 58.333333333%}
+	.container .cols.col-8 {width: 66.666666666%}
+	.container .cols.col-9 {width: 75%}
+	.container .cols.col-10 {width: 83.333333333%}
+	.container .cols.col-11 {width: 91.666666666%}
+	.container .cols.col-12 {width: 100%} 
+
+	.wraper-header {
+		background: url("/img/@media/background-header-L.png") no-repeat top center;
+		background-size: cover; 
+		-webkit-background-size: cover; 
+		-moz-background-size: cover;
+		overflow: hidden; 
+		min-height: 675px;
+	}
+
+	.header-menu {
+		padding: 15px 26px 0 129px;
+	}
+	.header-sociate-icon {
+		padding-top: 15px;
+	}
+}
+
+@media screen and (orientation: landscape), all and (max-width: 736px) { /* Альбомная ориентация */
+	.container .cols.col-1 {width: 8.333333333%}
+	.container .cols.col-2 {width: 16.666666666%}
+	.container .cols.col-3 {width: 25%}
+	.container .cols.col-4 {width: 33.333333333%}
+	.container .cols.col-5 {width: 41.666666666%}
+	.container .cols.col-6 {width: 50%}
+	.container .cols.col-7 {width: 58.333333333%}
+	.container .cols.col-8 {width: 66.666666666%}
+	.container .cols.col-9 {width: 75%}
+	.container .cols.col-10 {width: 83.333333333%}
+	.container .cols.col-11 {width: 91.666666666%}
+	.container .cols.col-12 {width: 100%} 
+
+	.wraper-header {
+		background: url("/img/@media/background-header-L.png") no-repeat top center;
+		/* background-size: cover; 
+		-webkit-background-size: cover; 
+		-moz-background-size: cover; */
+		overflow: hidden; 
+		min-height: 350px;
+	}
+
+	.wrapper-header-description {
+		margin: 160px 0 auto;
+	}
+
+	.hgroup__h1 {
+		font-size: 1.8em;
+	}
+	.header-description__item {
+		margin-bottom: 15px;
+		font-size: 1em;
+	}
+	.header-description__button-link {
+		padding: 12px;
+	}
+	.header-description__button {
+		width: 327px;
+		height: 42px;
+	}
+
+	.header-menu {
+		padding: 15px 26px 0 81px;
+	}
+}
+
+/* @media only screen and (max-width: 960px) { Брекпоинт - это точка отсчёта. В данном случае это 685px
+	.container .cols.col-1 {width: 8.333333333%}
+	.container .cols.col-2 {width: 16.666666666%}
+	.container .cols.col-3 {width: 25%}
+	.container .cols.col-4 {width: 33.333333333%}
+	.container .cols.col-5 {width: 41.666666666%}
+	.container .cols.col-6 {width: 50%}
+	.container .cols.col-7 {width: 58.333333333%}
+	.container .cols.col-8 {width: 66.666666666%}
+	.container .cols.col-9 {width: 75%}
+	.container .cols.col-10 {width: 83.333333333%}
+	.container .cols.col-11 {width: 91.666666666%}
+	.container .cols.col-12 {width: 100%} 
+
+	.wraper-header {
+		background: url("/img/@media/background-header-XL.png") no-repeat top center;
+		background-size: contain; 
+		-webkit-background-size: contain; 
+		-moz-background-size: contain;
+		overflow: hidden; 
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	.container .cols.col-1 {width: 8.333333333%}
+	.container .cols.col-2 {width: 16.666666666%}
+	.container .cols.col-3 {width: 25%}
+	.container .cols.col-4 {width: 33.333333333%}
+	.container .cols.col-5 {width: 41.666666666%}
+	.container .cols.col-6 {width: 50%}
+	.container .cols.col-7 {width: 58.333333333%}
+	.container .cols.col-8 {width: 66.666666666%}
+	.container .cols.col-9 {width: 75%}
+	.container .cols.col-10 {width: 83.333333333%}
+	.container .cols.col-11 {width: 91.666666666%}
+	.container .cols.col-12 {width: 100%} 
+
+	.wraper-header {
+		background: url("/img/@media/background-header-L.png") no-repeat top center;
+		background-size: contain; 
+		-webkit-background-size: contain; 
+		-moz-background-size: contain;
+		overflow: hidden;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	.container .cols.col-1 {width: 8.333333333%}
+	.container .cols.col-2 {width: 16.666666666%}
+	.container .cols.col-3 {width: 25%}
+	.container .cols.col-4 {width: 33.333333333%}
+	.container .cols.col-5 {width: 41.666666666%}
+	.container .cols.col-6 {width: 50%}
+	.container .cols.col-7 {width: 58.333333333%}
+	.container .cols.col-8 {width: 66.666666666%}
+	.container .cols.col-9 {width: 75%}
+	.container .cols.col-10 {width: 83.333333333%}
+	.container .cols.col-11 {width: 91.666666666%}
+	.container .cols.col-12 {width: 100%} 
+
+	.wraper-header {
+		background: url("/img/@media/background-header-M.png") no-repeat top center;
+		background-size: contain; 
+		-webkit-background-size: contain; 
+		-moz-background-size: contain; 
+		overflow: hidden;
+	}
+}
+
+@media only screen and (max-width: 321px) {
+	.container .cols.col-1 {width: 8.333333333%}
+	.container .cols.col-2 {width: 16.666666666%}
+	.container .cols.col-3 {width: 25%}
+	.container .cols.col-4 {width: 33.333333333%}
+	.container .cols.col-5 {width: 41.666666666%}
+	.container .cols.col-6 {width: 50%}
+	.container .cols.col-7 {width: 58.333333333%}
+	.container .cols.col-8 {width: 66.666666666%}
+	.container .cols.col-9 {width: 75%}
+	.container .cols.col-10 {width: 83.333333333%}
+	.container .cols.col-11 {width: 91.666666666%}
+	.container .cols.col-12 {width: 100%} 
+
+	.wraper-header {
+		background: url("/img/@media/background-header-S.png") no-repeat top center;
+		background-size: contain; 
+		-webkit-background-size: contain; 
+		-moz-background-size: contain;
+		overflow: hidden;
+	}
+
+	header a {
+		background-size: 20%;
+	}
+} */
